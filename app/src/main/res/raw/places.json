@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "MetroPoint General Hospital",
+    "category": "Hospital",
+    "latitude": -1.286389,
+    "longitude": 36.817223,
+    "address": "456 Healthcare Ave, MetroPoint Central"
+  },
+  {
+    "id": 2,
+    "name": "St. Mary's Medical Center",
+    "category": "Hospital",
+    "latitude": -1.292066,
+    "longitude": 36.821946,
+    "address": "789 Wellness Blvd, MetroPoint East"
+  },
+  {
+    "id": 3,
+    "name": "City Emergency Hospital",
+    "category": "Hospital",
+    "latitude": -1.280553,
+    "longitude": 36.812890,
+    "address": "321 Emergency Lane, MetroPoint South"
+  },
+  {
+    "id": 4,
+    "name": "Central Children's Hospital",
+    "category": "Hospital",
+    "latitude": -1.289477,
+    "longitude": 36.825112,
+    "address": "654 Pediatric Dr, MetroPoint West"
+  },
+  {
+    "id": 5,
+    "name": "MetroPoint Specialized Hospital",
+    "category": "Hospital",
+    "latitude": -1.283721,
+    "longitude": 36.819334,
+    "address": "987 Specialist Way, MetroPoint North"
+  },
+  {
+    "id": 6,
+    "name": "Central Police Station",
+    "category": "Police",
+    "latitude": -1.287145,
+    "longitude": 36.8 16557,
+    "address": "123 Justice Ave, MetroPoint Central"
+  },
+  {
+    "id": 7,
+    "name": "East District Police Station",
+    "category": "Police",
+    "latitude": -1.291334,
+    "longitude": 36.823445,
+    "address": "456 Law Enforcement Rd, MetroPoint East"
+  },
+  {
+    "id": 8,
+    "name": "West Precinct Police Station",
+    "category": "Police",
+    "latitude": -1.288892,
+    "longitude": 36.810223,
+    "address": "789 Security Blvd, MetroPoint West"
+  },
+  {
+    "id": 9,
+    "name": "North Division Police Station",
+    "category": "Police",
+    "latitude": -1.282667,
+    "longitude": 36.820112,
+    "address": "321 Safety St, MetroPoint North"
+  },
+  {
+    "id": 10,
+    "name": "South Community Police Post",
+    "category": "Police",
+    "latitude": -1.290445,
+    "longitude": 36.815778,
+    "address": "654 Protection Way, MetroPoint South"
+  },
+  {
+    "id": 11,
+    "name": "MetroPoint Central Library",
+    "category": "Library",
+    "latitude": -1.285223,
+    "longitude": 36.818890,
+    "address": "147 Knowledge Ave, MetroPoint Central"
+  },
+  {
+    "id": 12,
+    "name": "City Public Library - East Branch",
+    "category": "Library",
+    "latitude": -1.293112,
+    "longitude": 36.822334,
+    "address": "258 Reading Rd, MetroPoint East"
+  },
+  {
+    "id": 13,
+    "name": "West District Library",
+    "category": "Library",
+    "latitude": -1.287556,
+    "longitude": 36.813445,
+    "address": "369 Literature Lane, MetroPoint West"
+  },
+  {
+    "id": 14,
+    "name": "North Community Library",
+    "category": "Library",
+    "latitude": -1.281890,
+    "longitude": 36.821667,
+    "address": "741 Book St, MetroPoint North"
+  },
+  {
+    "id": 15,
+    "name": "South Children's Library",
+    "category": "Library",
+    "latitude": -1.291778,
+    "longitude": 36.817556,
+    "address": "852 Story Way, MetroPoint South"
+  }
+]

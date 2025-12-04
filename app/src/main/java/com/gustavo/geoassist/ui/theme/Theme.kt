@@ -16,7 +16,7 @@
  * - Custom color palette enforcement
  * - Material 3 typography integration
  *
- * @author GeoAssist Team
+ * @author Gustavo Sanchez
  * @since 1.0
  */
 package com.gustavo.geoassist.ui.theme

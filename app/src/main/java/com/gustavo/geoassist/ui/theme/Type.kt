@@ -8,7 +8,7 @@
  * The AppTypography value can be customized in the future to include custom fonts, weights, and
  * sizes specific to GeoAssist branding requirements.
  *
- * @author GeoAssist Team
+ * @author Gustavo Sanchez
  * @since 1.0
  */
 package com.gustavo.geoassist.ui.theme

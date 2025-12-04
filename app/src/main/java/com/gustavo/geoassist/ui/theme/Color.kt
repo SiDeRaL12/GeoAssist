@@ -9,7 +9,7 @@
  * consistency across all app components and states. All colors are defined using Compose Color values
  * and follow Material Design 3 color system guidelines.
  *
- * @author GeoAssist Team
+ * @author Gustavo Sanchez
  * @since 1.0
  */
 package com.gustavo.geoassist.ui.theme
