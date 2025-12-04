@@ -23,6 +23,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import com.gustavo.geoassist.ui.components.OsmMapView
 import com.gustavo.geoassist.ui.theme.AppTheme
 import com.gustavo.geoassist.ui.viewmodel.MapViewModel
 
@@ -128,52 +129,14 @@ fun GeoAssistApp(viewModel: MapViewModel) {
                 )
             }
             
-            // Places list
-            LazyColumn(
-                modifier = Modifier.fillMaxSize(),
-                contentPadding = PaddingValues(16.dp),
-                verticalArrangement = Arrangement.spacedBy(8.dp)
-            ) {
-                items(places) { place ->
-                    PlaceCard(place = place)
-                }
-            }
-        }
-    }
-}
-
-/**
- * Card composable displaying place information.
- *
- * @param place The PlaceEntity to display
- */
-@Composable
-fun PlaceCard(place: com.gustavo.geoassist.data.local.PlaceEntity) {
-    Card(
-        modifier = Modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.surfaceVariant
-        )
-    ) {
-        Column(
-            modifier = Modifier.padding(16.dp)
-        ) {
-            Text(
-                text = place.name,
-                style = MaterialTheme.typography.titleMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant
-            )
-            Spacer(modifier = Modifier.height(4.dp))
-            Text(
-                text = place.category,
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.primary
-            )
-            Spacer(modifier = Modifier.height(4.dp))
-            Text(
-                text = place.address,
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant
+            // Map view showing places
+            OsmMapView(
+                places = places,
+                userLocation = viewModel.userLocation.collectAsState().value,
+                onMarkerClick = { place ->
+                    // TODO: Show place detail dialog
+                },
+                modifier = Modifier.fillMaxSize()
             )
         }
     }
