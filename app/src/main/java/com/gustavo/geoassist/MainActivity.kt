@@ -16,9 +16,12 @@ import androidx.activity.viewModels
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.gustavo.geoassist.ui.theme.AppTheme
 import com.gustavo.geoassist.ui.viewmodel.MapViewModel
@@ -86,17 +89,35 @@ fun GeoAssistApp(viewModel: MapViewModel) {
                 FilterChip(
                     selected = showHospitals,
                     onClick = { viewModel.toggleHospitals() },
-                    label = { Text("Hospitals") }
+                    label = { Text("Hospitals") },
+                    leadingIcon = {
+                        Icon(
+                            painter = painterResource(R.drawable.ic_hospital),
+                            contentDescription = "Hospital"
+                        )
+                    }
                 )
                 FilterChip(
                     selected = showPolice,
                     onClick = { viewModel.togglePolice() },
-                    label = { Text("Police") }
+                    label = { Text("Police") },
+                    leadingIcon = {
+                        Icon(
+                            painter = painterResource(R.drawable.ic_police),
+                            contentDescription = "Police"
+                        )
+                    }
                 )
                 FilterChip(
                     selected = showLibraries,
                     onClick = { viewModel.toggleLibraries() },
-                    label = { Text("Libraries") }
+                    label = { Text("Libraries") },
+                    leadingIcon = {
+                        Icon(
+                            painter = painterResource(R.drawable.ic_library),
+                            contentDescription = "Library"
+                        )
+                    }
                 )
             }
             
